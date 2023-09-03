@@ -140,7 +140,7 @@ h6 {
      object-fit: contain;
 }
 
-.header {
+.header-main {
   padding: 1.5rem 0 1.3125rem;
   background-color: #fff;
   position: relative;
@@ -203,7 +203,7 @@ h6 {
 
 .top-header__block small {
   color: #6C757D;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
 }
 
 .top-header__social {
@@ -217,6 +217,7 @@ h6 {
 }
 
 .top-header__btn {
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   background-color: #F8F9FA;
@@ -260,6 +261,7 @@ h6 {
 }
 
 .header-social span {
+  font-weight: 500;
   display: block;
 }
 
@@ -508,6 +510,7 @@ h6 {
   }
 
   .submenu {
+    z-index: 10;
     position: absolute;
     min-width: 18.125rem;
     right: 0;
@@ -527,11 +530,11 @@ h6 {
 }
 
 @media (max-width: 61.99875em) {
-  .header {
+  .header-main {
     padding: 0.5rem 0;
   }
 
-  .header::before {
+  .header-main::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -559,7 +562,7 @@ h6 {
   }
 
   .top-header__block a {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .top-header__block small:nth-child(2) {
