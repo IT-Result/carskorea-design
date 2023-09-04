@@ -286,6 +286,10 @@
   font-size: 1rem;
 }
 
+.bottom-header__container {
+  position: relative;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,10 +306,6 @@
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   color: inherit;
-}
-
-.lang {
-  position: relative;
 }
 
 .lang__btn {
@@ -472,11 +472,24 @@ ul.submenu {
     background-color: rgba(207, 226, 255, 0.4);
   }
 
+  .lang:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .lang:hover .lang__btn {
+    background-color: #F8F9FA;
+  }
+
   .submenu {
     z-index: 10;
     position: absolute;
     min-width: 18.125rem;
-    right: 0;
+    right: 0.75rem;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -709,18 +722,5 @@ ul.submenu {
   .menu__link:hover {
     background-color: rgba(207, 226, 255, 0.4);
     color: #212529;
-  }
-
-  .lang:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  .lang:hover .lang__btn {
-    background-color: #F8F9FA;
   }
 }
