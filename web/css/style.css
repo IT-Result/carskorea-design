@@ -693,6 +693,7 @@
 @media (any-hover: hover) {
   .top-header__btn:hover {
     background-color: rgba(207, 226, 255, 0.4);
+    color: #212529;
   }
 
   .header-social:hover {
@@ -705,6 +706,7 @@
 
   .menu__link:hover {
     background-color: rgba(207, 226, 255, 0.4);
+    color: #212529;
   }
 
   .lang:hover .submenu {
