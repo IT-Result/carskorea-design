@@ -1,77 +1,5 @@
 @charset "UTF-8";
 
-* {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  min-width: 320px;
-}
-
-body {
-  color: #212529;
-  line-height: 1;
-  font-family: "segoe ui", sans-serif;
-  font-size: 0.875rem;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /*чтобы не прыгали цифры*/
-}
-
-input,
-button,
-textarea {
-  font-family: "segoe ui";
-  font-size: inherit;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-  color: inherit;
-  background-color: transparent;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -124,13 +52,6 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.header-main *,
-.header-main *:before,
-.header-main *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .header-main input,
 .header-main button,
 .header-main textarea {
@@ -147,12 +68,19 @@ h6 {
 }
 
 .header-main a {
-  color: inherit;
   text-decoration: none;
 }
 
 .header-main ul li {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-main ul,
+.header-main ol {
+  padding: 0;
+  margin: 0;
 }
 
 .header-main img {
@@ -204,6 +132,10 @@ h6 {
   position: relative;
 }
 
+.top-header__links a {
+  color: inherit;
+}
+
 .top-header__block {
   display: -ms-grid;
   display: grid;
@@ -222,6 +154,7 @@ h6 {
 .top-header__block a {
   font-size: 1.25rem;
   font-weight: 600;
+  color: inherit;
 }
 
 .top-header__block small {
@@ -257,6 +190,7 @@ h6 {
   white-space: nowrap;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  color: inherit;
 }
 
 .top-header__btn img {
@@ -343,6 +277,9 @@ h6 {
   color: #6C757D;
   padding-left: 0.75rem;
   font-size: 0.875rem;
+}
+
+.user-header a.user-header__out {
   text-decoration: underline;
 }
 
@@ -365,6 +302,7 @@ h6 {
   border-radius: 0.25rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  color: inherit;
 }
 
 .lang {
