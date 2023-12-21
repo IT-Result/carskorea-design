@@ -260,6 +260,8 @@
     -ms-flex-align: center;
     align-items: center;
     gap: 1rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .menu__link {
     padding: 0.34375rem 0.5rem;
@@ -272,6 +274,7 @@
 .lang__btn {
     color: #6c757d;
     font-weight: 600;
+    min-width: 9.539375rem;
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
     display: -webkit-box;
@@ -499,6 +502,12 @@ ul.submenu {
         margin-top: 0.75rem;
         color: #0d6efd;
         margin-bottom: 0.875rem;
+    }
+    .top-header__btn-red {
+        border-color: #dc3545;
+    }
+    .top-header__btn-red span {
+        color: #dc3545;
     }
     .header-social {
         gap: 0.625rem;
